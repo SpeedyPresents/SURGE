@@ -1,0 +1,14 @@
+--Loader
+local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/sol"))()
+local win = SolarisLib:New({
+  Name = "Sᴜʀɢᴇ V1",
+  FolderToSave = "Sᴜʀɢᴇ V1"
+})
+
+SolarisLib:Notification("Loaded!", "Successfully Connected To Surge Networks!")
+
+--Update Logs
+local tab = win:Tab("Updates 'n' Stuff")
+local sec = tab:Section("Update Log")
+
+local label = sec:Label("Update 1.00 - New Ui Design, More Features To Be Added Soon")
