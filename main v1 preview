@@ -12,3 +12,14 @@ local tab = win:Tab("Updates 'n' Stuff")
 local sec = tab:Section("Update Log")
 
 local label = sec:Label("Update 1.00 - New Ui Design, More Features To Be Added Soon")
+
+--Blox Fruits
+local tab = win:Tab("Blox Fruits")
+local sec = tab:Section("Recommended Scripts")
+
+sec:Button("Ripper Hub V2", function()
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/RIPPERHUBV2.lua"))()
+
+  SolarisLib:Notification("Executed", "Successfully Executed")
+end)
+
