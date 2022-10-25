@@ -1,0 +1,50 @@
+local Atlas = loadstring(game:HttpGet("https://rd2glory.com/Atlas.lua"))()
+
+local UI = Atlas.new({
+    Name = "Sᴜʀɢᴇ V1 Lᴏᴀᴅᴇʀ",
+    ConfigFolder = "Surge Lᴏᴀᴅᴇʀ";
+    Credit = "Scripted By This World Shall Know JDM#8017";
+    Color = Color3.fromRGB(114,137,218);
+    Bind = "RightShift";
+    UseLoader = true;
+    FullName = "Sᴜʀɢᴇ V1 Lᴏᴀᴅᴇʀ"; 
+    CheckKey = function(inputtedKey)
+        return inputtedKey=="dev"
+    end;
+    Discord = "https://discord.gg/9YZ5tXvna7"; 
+})
+
+local MyPage = UI:CreatePage("Surge Loader")
+
+local MySection = MyPage:CreateSection("Legacy UI")
+
+MySection:CreateButton({
+    Name = "Beta UI Loader";
+    Callback = function()
+ --Loader
+local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/sol"))()
+local win = SolarisLib:New({
+  Name = "Sᴜʀɢᴇ V1",
+  FolderToSave = "Sᴜʀɢᴇ V1"
+})
+
+SolarisLib:Notification("Loaded!", "Successfully Connected To Surge Networks!")
+
+--Update Logs
+local tab = win:Tab("Updates 'n' Stuff")
+local sec = tab:Section("Update Log")
+
+local label = sec:Label("Update 1.00 - New Ui Design, More Features To Be Added Soon")
+    end
+})
+
+
+
+local MySection = MyPage:CreateSection(" _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ ")
+
+MySection:CreateButton({
+    Name = "Click Me Once You Have Loaded The UI Above";
+    Callback = function()
+        UI:Destroy()
+    end
+})
