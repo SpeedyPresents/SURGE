@@ -5,7 +5,7 @@ local win = SolarisLib:New({
   FolderToSave = "Sᴜʀɢᴇ V1"
 })
 
-SolarisLib:Notification("Loaded!", "Successfully Connected To Surge Networks!")
+SolarisLib:Notification("Loaded!", "Successfully Connected To Surge's Networks!")
 
 --Update Logs
 local tab = win:Tab("Updates 'n' Stuff")
